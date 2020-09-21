@@ -37,9 +37,9 @@ public class Person{
     @Column(name="browserused")
     private String browserUsed;
 
-    @JoinColumn(name="islocatedin", nullable = false)
-    @JsonIgnore
-    private City isLocatedIn;
+    //@JoinColumn(name="islocatedin", nullable = false)
+    //@JsonIgnore
+    //private City isLocatedIn;
 
     public Person() {
     }
