@@ -3,8 +3,8 @@ package uni.dbprak;
 import javax.persistence.*;
 
 @Entity
-@Table(name="city")
-public class City {
+@Table(name="country")
+public class Country {
     @Id
     @GeneratedValue
     @Column(name="id")
@@ -14,5 +14,4 @@ public class City {
     private String name;
 
     //ispartof
-
 }
