@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+
+        <!-- Connection settings -->
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/dbp</property>
+        <property name="hibernate.connection.username">postgres</property>
+        <property name="hibernate.connection.password">A</property>
+
+        <!-- SQL dialect -->
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQL9Dialect</property>
+
+        <!-- Print executed SQL to stdout -->
+
+
+        <!-- Update database on startup -->
+        <property name="hibernate.hbm2ddl.auto">none</property>
+
+        <!-- Annotated entity classes -->
+        <mapping class="uni.dbprak.Person"/>
+        <mapping class="uni.dbprak.City"/>
+
+        <!--
+        <mapping class="dbprak.aufgabe1.Continent"/>
+        <mapping class="dbprak.aufgabe1.City"/>
+        <mapping class="dbprak.aufgabe1.Country"/>
+        <mapping class="dbprak.aufgabe1.Person"/>
+        <mapping class="dbprak.aufgabe1.Person_email"/>
+        <mapping class="dbprak.aufgabe1.Person_speaks"/>
+        <mapping class="dbprak.aufgabe1.Tag"/>
+        <mapping class="dbprak.aufgabe1.TagClass"/>
+        <mapping class="dbprak.aufgabe1.Tag_hasType_TagClass"/>
+        <mapping class="dbprak.aufgabe1.TagClass_isSubclassOf_TagClass"/>
+        <mapping class="dbprak.aufgabe1.Company"/>
+        <mapping class="dbprak.aufgabe1.University"/>
+        <mapping class="dbprak.aufgabe1.Forum"/>
+        <mapping class="dbprak.aufgabe1.Forum_hasTag_Tag"/>
+        <mapping class="dbprak.aufgabe1.Message"/>
+        <mapping class="dbprak.aufgabe1.Comment"/>
+        <mapping class="dbprak.aufgabe1.Post"/>
+        <mapping class="dbprak.aufgabe1.Forum_hasMember_Person"/>
+        <mapping class="dbprak.aufgabe1.Message_hasTag_Tag"/>
+        <mapping class="dbprak.aufgabe1.Person_likes_Message"/>
+        <mapping class="dbprak.aufgabe1.Person_knows_Person"/>
+        <mapping class="dbprak.aufgabe1.Person_studyAt_University"/>
+        <mapping class="dbprak.aufgabe1.Person_workAt_Company"/>
+        <mapping class="dbprak.aufgabe1.Person_hasInterest_Tag"/>
+        -->
+
+    </session-factory>
+</hibernate-configuration>
