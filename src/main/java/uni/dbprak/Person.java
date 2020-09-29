@@ -41,14 +41,7 @@ public class Person{
     //@JsonIgnore
     //private City isLocatedIn;
 
-    public Person() {
-    }
-
-    public Person(String firstName, String lastName){
-        this.firstName = firstName;
-        this.lastName = lastName;
-    }
-
+    public Person() {}
     public String getFirstName() {
         return firstName;
     }

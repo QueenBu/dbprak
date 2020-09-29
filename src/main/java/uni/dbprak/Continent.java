@@ -1,13 +1,15 @@
 package uni.dbprak;
 
+import org.hibernate.annotations.GenericGenerator;
+
 import javax.persistence.*;
 
 @Entity
 @Table(name="continent")
 public class Continent {
     @Id
-    @Column(name="id")
-    private int id;
+    //@GeneratedValue
+    private long id;
 
     @Column(name="name")
     private String name;
@@ -16,10 +18,15 @@ public class Continent {
         this.name = name;
     };
 
+    public Continent(String name, Long id) {
+        this.name = name;
+        this.id = id;
+    };
+
     public Continent() {
     }
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 
