@@ -29,10 +29,11 @@
         <mapping class="uni.dbprak.Continent"/>
         <mapping class="uni.dbprak.Country"/>
         <mapping class="uni.dbprak.Forum"/>
-        <!--<mapping class="uni.dbprak.Organisation"/> -->
+        <mapping class="uni.dbprak.Organisation"/>
         <mapping class="uni.dbprak.Person"/>
-        <!-- <mapping class="uni.dbprak.Place"/> -->
+        <mapping class="uni.dbprak.Place"/>
         <mapping class="uni.dbprak.Post"/>
+        <mapping class="uni.dbprak.studyAt"/>
         <mapping class="uni.dbprak.University"/>
 
         <!--

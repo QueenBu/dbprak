@@ -7,7 +7,8 @@ import java.util.Set;
 @Table(name="country")
 public class Country extends Place{
 
-    @OneToMany(mappedBy = "isPartOf")
+    @OneToMany
+    //@OneToMany(mappedBy = "ispartof")
     private Set<City> cities;
 
     public Set<City> getCities() {

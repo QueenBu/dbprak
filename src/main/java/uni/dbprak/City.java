@@ -8,4 +8,17 @@ import java.util.Set;
 @PrimaryKeyJoinColumn(name="id")
 public class City extends Place {
 
+    @OneToMany(mappedBy = "isLocatedIn")
+    private Set<Person> persons;
+
+    @OneToMany(mappedBy = "isLocatedIn")
+    private Set<University> universities;
+
+    @ManyToOne
+    @JoinColumn(name = "isPartOf")
+    private Country isPartOf;
+
+    public Set<Person> getPersons() {
+        return persons;
+    }
 }
