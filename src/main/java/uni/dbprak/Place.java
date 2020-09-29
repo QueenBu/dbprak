@@ -2,8 +2,9 @@ package uni.dbprak;
 
 import javax.persistence.*;
 
-@Entity
-@Inheritance(strategy=InheritanceType.TABLE_PER_CLASS)
+//@Entity
+//@Inheritance(strategy=InheritanceType.TABLE_PER_CLASS)
+@MappedSuperclass
 public class Place {
 
     @Id

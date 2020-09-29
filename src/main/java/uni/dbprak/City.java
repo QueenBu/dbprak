@@ -4,7 +4,8 @@ import javax.persistence.*;
 import java.util.Set;
 
 @Entity
-@PrimaryKeyJoinColumn(name="ID")
+@Table(name="City")
+@PrimaryKeyJoinColumn(name="id")
 public class City extends Place {
 
 }

@@ -1,10 +1,20 @@
 package uni.dbprak;
 
 import javax.persistence.*;
+import java.util.Set;
 
 @Entity
 @Table(name="country")
 public class Country extends Place{
 
-    //ispartof
+    @OneToMany(mappedBy = "isPartOf")
+    private Set<City> cities;
+
+    public Set<City> getCities() {
+        return cities;
+    }
+
+    public void setCities(Set<City> cities) {
+        this.cities = cities;
+    }
 }

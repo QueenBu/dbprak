@@ -23,32 +23,34 @@
         <property name="hibernate.hibernate.hbm2ddl.auto">none</property>
 
         <!-- Annotated entity classes -->
-        <mapping class="uni.dbprak.Person"/>
         <mapping class="uni.dbprak.City"/>
-        <mapping class="uni.dbprak.Country"/>
-        <mapping class="uni.dbprak.Continent"/>
         <mapping class="uni.dbprak.Comment"/>
+        <mapping class="uni.dbprak.Company"/>
+        <mapping class="uni.dbprak.Continent"/>
+        <mapping class="uni.dbprak.Country"/>
+        <mapping class="uni.dbprak.Forum"/>
+        <!--<mapping class="uni.dbprak.Organisation"/> -->
+        <mapping class="uni.dbprak.Person"/>
+        <!-- <mapping class="uni.dbprak.Place"/> -->
+        <mapping class="uni.dbprak.Post"/>
         <mapping class="uni.dbprak.University"/>
 
         <!--
-        <mapping class="dbprak.aufgabe1.Person_email"/>
-        <mapping class="dbprak.aufgabe1.Person_speaks"/>
-        <mapping class="dbprak.aufgabe1.Tag"/>
-        <mapping class="dbprak.aufgabe1.TagClass"/>
-        <mapping class="dbprak.aufgabe1.Tag_hasType_TagClass"/>
-        <mapping class="dbprak.aufgabe1.TagClass_isSubclassOf_TagClass"/>
-        <mapping class="dbprak.aufgabe1.Company"/>
-        <mapping class="dbprak.aufgabe1.Forum"/>
-        <mapping class="dbprak.aufgabe1.Forum_hasTag_Tag"/>
-        <mapping class="dbprak.aufgabe1.Message"/>
-        <mapping class="dbprak.aufgabe1.Post"/>
-        <mapping class="dbprak.aufgabe1.Forum_hasMember_Person"/>
-        <mapping class="dbprak.aufgabe1.Message_hasTag_Tag"/>
-        <mapping class="dbprak.aufgabe1.Person_likes_Message"/>
-        <mapping class="dbprak.aufgabe1.Person_knows_Person"/>
-        <mapping class="dbprak.aufgabe1.Person_studyAt_University"/>
-        <mapping class="dbprak.aufgabe1.Person_workAt_Company"/>
-        <mapping class="dbprak.aufgabe1.Person_hasInterest_Tag"/>
+        <Person_email"/>
+        <Person_speaks"/>
+        <Tag"/>
+        <TagClass"/>
+        <Tag_hasType_TagClass"/>
+        <TagClass_isSubclassOf_TagClass"/>
+        <Forum_hasTag_Tag"/>
+        <Message"/>
+        <Forum_hasMember_Person"/>
+        <Message_hasTag_Tag"/>
+        <Person_likes_Message"/>
+        <Person_knows_Person"/>
+        <Person_studyAt_University"/>
+        <Person_workAt_Company"/>
+        <Person_hasInterest_Tag"/>
         -->
 
     </session-factory>
