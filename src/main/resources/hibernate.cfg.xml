@@ -25,11 +25,9 @@
         <mapping class="uni.dbprak.Person"/>
         <mapping class="uni.dbprak.City"/>
         <mapping class="uni.dbprak.Country"/>
+        <mapping class="uni.dbprak.Continent"/>
 
         <!--
-        <mapping class="dbprak.aufgabe1.Continent"/>
-        <mapping class="dbprak.aufgabe1.City"/>
-        <mapping class="dbprak.aufgabe1.Person"/>
         <mapping class="dbprak.aufgabe1.Person_email"/>
         <mapping class="dbprak.aufgabe1.Person_speaks"/>
         <mapping class="dbprak.aufgabe1.Tag"/>
