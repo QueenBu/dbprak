@@ -9,8 +9,12 @@ import java.sql.Timestamp;
 @PrimaryKeyJoinColumn(name="id")
 public class Comment extends Message{
 
-    private Message replyOf;
-    //private Comment replyOfComment;
-    //private Post replyOfPost;
+    @JoinColumn(name="replyofcomment")
+    @ManyToOne
+    private Comment replyOfComment;
+
+    @JoinColumn(name="replyofpost")
+    @ManyToOne
+    private Post replyOfPost;
 
 }

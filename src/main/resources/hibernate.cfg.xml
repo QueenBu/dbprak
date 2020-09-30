@@ -35,12 +35,12 @@
         <mapping class="uni.dbprak.Post"/>
         <mapping class="uni.dbprak.studyAt"/>
         <mapping class="uni.dbprak.University"/>
+        <mapping class="uni.dbprak.Tag"/>
+        <mapping class="uni.dbprak.TagClass"/>
 
         <!--
         <Person_email"/>
         <Person_speaks"/>
-        <Tag"/>
-        <TagClass"/>
         <Tag_hasType_TagClass"/>
         <TagClass_isSubclassOf_TagClass"/>
         <Forum_hasTag_Tag"/>

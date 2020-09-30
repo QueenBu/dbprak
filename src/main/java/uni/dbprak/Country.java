@@ -11,11 +11,8 @@ public class Country extends Place{
     //@OneToMany(mappedBy = "ispartof")
     private Set<City> cities;
 
-    public Set<City> getCities() {
-        return cities;
-    }
+    @ManyToOne
+    @JoinColumn(name = "isPartOf")
+    private Continent isPartOf;
 
-    public void setCities(Set<City> cities) {
-        this.cities = cities;
-    }
 }
