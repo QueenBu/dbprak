@@ -5,6 +5,8 @@ import org.springframework.data.annotation.CreatedDate;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @Table(name="person")
@@ -38,8 +40,19 @@ public class Person{
     private String browserUsed;
 
     @JoinColumn(name="islocatedin", nullable = false)
-    //@JsonIgnore
+    @ManyToOne
     private City isLocatedIn;
+
+    @OneToMany(mappedBy="creator")
+    private Set<Comment> comment = new HashSet<Comment>();
+
+    public Set<Comment> getComment() {
+        return comment;
+    }
+
+    public void setComment(Set<Comment> comment) {
+        this.comment = comment;
+    }
 
     public Person() {}
     public String getFirstName() {

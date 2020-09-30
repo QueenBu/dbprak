@@ -8,10 +8,12 @@ import java.util.Set;
 @PrimaryKeyJoinColumn(name="id")
 public class City extends Place {
 
-    @OneToMany(mappedBy = "isLocatedIn")
+    @OneToMany
+    @JoinColumn(name="isLocatedIn")
     private Set<Person> persons;
 
-    @OneToMany(mappedBy = "isLocatedIn")
+    @OneToMany
+    @JoinColumn(name="islocatedin")
     private Set<University> universities;
 
     @ManyToOne
@@ -20,5 +22,28 @@ public class City extends Place {
 
     public Set<Person> getPersons() {
         return persons;
+    }
+
+    public void setPersons(Set<Person> persons) {
+        this.persons = persons;
+    }
+
+    public Set<University> getUniversities() {
+        return universities;
+    }
+
+    public void setUniversities(Set<University> universities) {
+        this.universities = universities;
+    }
+
+    public Country getIsPartOf() {
+        return isPartOf;
+    }
+
+    public void setIsPartOf(Country isPartOf) {
+        this.isPartOf = isPartOf;
+    }
+
+    public City() {
     }
 }

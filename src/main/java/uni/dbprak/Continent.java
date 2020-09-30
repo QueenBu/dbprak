@@ -9,7 +9,8 @@ import java.util.Set;
 @Table(name="continent")
 public class Continent extends Place{
 
-    @OneToMany(mappedBy="isPartOf")
+    @OneToMany
+    //@OneToMany(mappedBy="isPartOf")
     private Set<Country> countries;
 
     public Set<Country> getCountries() {

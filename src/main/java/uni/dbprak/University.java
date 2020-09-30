@@ -8,6 +8,6 @@ import java.math.BigInteger;
 public class University extends Organisation{
 
     @JoinColumn(name="islocatedin")
-    //@JsonIgnore
+    @ManyToOne
     private City isLocatedIn;
 }
