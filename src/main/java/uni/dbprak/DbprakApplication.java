@@ -31,10 +31,10 @@ public class DbprakApplication {
 			 */
 
 			//etwas laden (Test)
-			List continents = session.createQuery("From Continent").list();
-			for( int i=0; i<continents.size(); i++){
-				Continent continent = (Continent) continents.get(i);
-				System.out.println("Continent: " + continent.getName());
+			List tags = session.createQuery("From Tag").list();
+			for( int i=0; i<tags.size(); i++){
+				Tag tag = (Tag) tags.get(i);
+				System.out.println("Tagtype: " + tag.getHasType());
 			}
 
 
