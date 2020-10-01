@@ -51,6 +51,13 @@ public class Person{
     @OneToMany(mappedBy = "persid")
     private Set<WorksAt> worksAt = new HashSet<WorksAt>();
 
+    @OneToMany(mappedBy = "pers1")
+    private Set<Knows> knows1 = new HashSet<Knows>();
+
+    @OneToMany(mappedBy = "pers2")
+    private Set<Knows> knows2 = new HashSet<Knows>();
+
+
     //Getters and Setters and stuff
 
     public Set<Comment> getComment() {

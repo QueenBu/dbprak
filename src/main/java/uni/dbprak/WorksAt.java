@@ -13,8 +13,7 @@ public class WorksAt {
     @Id
     @ManyToOne
     @JoinColumn(name="compid")
-    private Company compid;
-    @Column(name="workfrom")
-    private int workfrom;
+    private University compid;
 
+    private int workfrom;
 }

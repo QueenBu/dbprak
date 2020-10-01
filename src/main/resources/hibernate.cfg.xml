@@ -37,7 +37,8 @@
         <mapping class="uni.dbprak.University"/>
         <mapping class="uni.dbprak.Tag"/>
         <mapping class="uni.dbprak.TagClass"/>
-
+        <mapping class="uni.dbprak.WorksAt"/>
+        <mapping class="uni.dbprak.Knows"/>
 
         <!--
         <Person_email"/>
@@ -45,12 +46,9 @@
         <Tag_hasType_TagClass"/>
         <TagClass_isSubclassOf_TagClass"/>
         <Forum_hasTag_Tag"/>
-        <Message"/>
         <Forum_hasMember_Person"/>
         <Message_hasTag_Tag"/>
         <Person_likes_Message"/>
-        <Person_knows_Person"/>
-        <Person_workAt_Company"/>
         <Person_hasInterest_Tag"/>
         -->
 
