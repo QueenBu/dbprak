@@ -15,6 +15,7 @@ public class Tag {
     private BigInteger id;
     @Column(name="tagname")
     private String tagName;
+    //maybe this should be a set?
     @JoinColumn(name="tagclassid", table="hastype")
     @OneToOne
     private TagClass hasType;

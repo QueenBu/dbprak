@@ -1,15 +1,18 @@
 package uni.dbprak;
 
-import javax.persistence.Entity;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import javax.persistence.Table;
+import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @Table(name="Company")
-public class Company extends Organisation{
+@PrimaryKeyJoinColumn(name="ID")
+public class Company extends Organisation {
 
     @JoinColumn(name="islocatedin")
     @ManyToOne
     private Country isLocatedIn;
+
+    @OneToMany(mappedBy = "compid")
+    private Set<WorksAt> worksAt = new HashSet<WorksAt>();
 }

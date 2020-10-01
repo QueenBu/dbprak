@@ -1,6 +1,5 @@
 package uni.dbprak;
 
-import net.minidev.json.annotate.JsonIgnore;
 import org.springframework.data.annotation.CreatedDate;
 
 import javax.persistence.*;
@@ -45,6 +44,14 @@ public class Person{
 
     @OneToMany(mappedBy="creator")
     private Set<Comment> comment = new HashSet<Comment>();
+
+    @OneToMany(mappedBy = "persid")
+    private Set<StudyAt> studyAt = new HashSet<StudyAt>();
+
+    @OneToMany(mappedBy = "persid")
+    private Set<WorksAt> worksAt = new HashSet<WorksAt>();
+
+    //Getters and Setters and stuff
 
     public Set<Comment> getComment() {
         return comment;

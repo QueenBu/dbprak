@@ -33,10 +33,11 @@
         <mapping class="uni.dbprak.Person"/>
         <mapping class="uni.dbprak.Place"/>
         <mapping class="uni.dbprak.Post"/>
-        <mapping class="uni.dbprak.studyAt"/>
+        <mapping class="uni.dbprak.StudyAt"/>
         <mapping class="uni.dbprak.University"/>
         <mapping class="uni.dbprak.Tag"/>
         <mapping class="uni.dbprak.TagClass"/>
+
 
         <!--
         <Person_email"/>
@@ -49,7 +50,6 @@
         <Message_hasTag_Tag"/>
         <Person_likes_Message"/>
         <Person_knows_Person"/>
-        <Person_studyAt_University"/>
         <Person_workAt_Company"/>
         <Person_hasInterest_Tag"/>
         -->

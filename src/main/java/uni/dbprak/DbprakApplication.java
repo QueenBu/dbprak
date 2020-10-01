@@ -34,7 +34,7 @@ public class DbprakApplication {
 			List tags = session.createQuery("From Tag").list();
 			for( int i=0; i<tags.size(); i++){
 				Tag tag = (Tag) tags.get(i);
-				System.out.println("Tagtype: " + tag.getHasType());
+				System.out.println("Tagtype: " + tag.getHasType().getTagClassName());
 			}
 
 

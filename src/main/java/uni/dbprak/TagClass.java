@@ -15,6 +15,17 @@ public class TagClass {
     private String tagClassName;
 
     @OneToMany
-    @JoinColumn(name="tagclassid")
     private Set<Tag> tags;
+
+    public BigInteger getId() {
+        return id;
+    }
+
+    public String getTagClassName() {
+        return tagClassName;
+    }
+
+    public Set<Tag> getTags() {
+        return tags;
+    }
 }

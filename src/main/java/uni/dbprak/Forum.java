@@ -5,19 +5,20 @@ import java.math.BigInteger;
 import java.sql.Timestamp;
 
 @Entity
-@Table(name="forum")
+@Table(name = "forum")
 public class Forum {
 
     @Id
     @GeneratedValue
-    @Column(name="id")
+    @Column(name = "id")
     private BigInteger id;
-    @Column(name="title")
+    @Column(name = "title")
     private String title;
-    @Column(name="creationDate")
+    @Column(name = "creationDate")
     private Timestamp creationDate;
-    @JoinColumn(name="moderator")
+    @JoinColumn(name = "moderator")
     @ManyToOne
     private Person moderator;
+
 
 }
