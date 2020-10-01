@@ -69,6 +69,10 @@ public class Person{
     @OneToMany(mappedBy = "persid")
     private Set<HasInterest> hasInterests = new HashSet<HasInterest>();
 
+    @OneToMany(mappedBy = "persid")
+    private Set<PersonEmail> personEmails = new HashSet<PersonEmail>();
+    @OneToMany(mappedBy = "persid")
+    private Set<PersonSpeaks> personSpeaks = new HashSet<PersonSpeaks>();
 
     //Getters and Setters and stuff
 

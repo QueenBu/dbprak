@@ -47,11 +47,9 @@
         <mapping class="uni.dbprak.PostHasTag"/>
         <mapping class="uni.dbprak.CommentHasTag"/>
         <mapping class="uni.dbprak.HasInterest"/>
+        <mapping class="uni.dbprak.PersonEmail"/>
+        <mapping class="uni.dbprak.PersonSpeaks"/>
 
-        <!--
-        <Person_email"/>
-        <Person_speaks"/>
-        -->
 
     </session-factory>
 </hibernate-configuration>
