@@ -18,4 +18,6 @@ public class Post extends Message{
     private Forum forum;
     @OneToMany(mappedBy = "postid")
     private Set<LikesPost> likesPost= new HashSet<LikesPost>();
+    @OneToMany(mappedBy = "postid")
+    private Set<PostHasTag> postHasTag = new HashSet<PostHasTag>();
 }

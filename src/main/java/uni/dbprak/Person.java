@@ -66,6 +66,10 @@ public class Person{
     @OneToMany(mappedBy = "persid")
     private Set<HasMember> hasMember = new HashSet<HasMember>();
 
+    @OneToMany(mappedBy = "persid")
+    private Set<HasInterest> hasInterests = new HashSet<HasInterest>();
+
+
     //Getters and Setters and stuff
 
     public Set<Comment> getComment() {

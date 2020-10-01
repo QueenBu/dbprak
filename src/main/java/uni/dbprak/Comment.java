@@ -22,4 +22,7 @@ public class Comment extends Message{
     @OneToMany(mappedBy="commentid", fetch = FetchType.LAZY)
     private Set<LikesComment> likesComments= new HashSet<LikesComment>();
 
+    @OneToMany(mappedBy = "commentid")
+    private Set<CommentHasTag> commentHasTag = new HashSet<CommentHasTag>();
+
 }

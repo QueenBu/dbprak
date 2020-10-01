@@ -21,8 +21,36 @@ public class Forum {
     @JoinColumn(name = "moderator")
     @ManyToOne
     private Person moderator;
-
     @OneToMany(mappedBy = "forumid")
     private Set<HasMember> hasMember = new HashSet<HasMember>();
+    @OneToMany(mappedBy = "forumid")
+    private Set<ForumHasTag> forumHasTag = new HashSet<ForumHasTag>();
 
+
+    public Forum() {
+    }
+
+    public BigInteger getId() {
+        return id;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public Timestamp getCreationDate() {
+        return creationDate;
+    }
+
+    public Person getModerator() {
+        return moderator;
+    }
+
+    public Set<HasMember> getHasMember() {
+        return hasMember;
+    }
+
+    public Set<ForumHasTag> getForumHasTag() {
+        return forumHasTag;
+    }
 }
