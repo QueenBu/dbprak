@@ -2,6 +2,8 @@ package uni.dbprak;
 
 import javax.persistence.*;
 import java.math.BigInteger;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @Table(name="post")
@@ -14,4 +16,6 @@ public class Post extends Message{
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "forumid")
     private Forum forum;
+    @OneToMany(mappedBy = "postid")
+    private Set<LikesPost> likesPost= new HashSet<LikesPost>();
 }

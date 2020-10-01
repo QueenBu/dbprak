@@ -39,6 +39,10 @@
         <mapping class="uni.dbprak.TagClass"/>
         <mapping class="uni.dbprak.WorksAt"/>
         <mapping class="uni.dbprak.Knows"/>
+        <mapping class="uni.dbprak.LikesComment"/>
+        <mapping class="uni.dbprak.LikesPost"/>
+        <mapping class="uni.dbprak.HasMember"/>
+        <mapping class="uni.dbprak.IsSubclassOf"/>
 
         <!--
         <Person_email"/>
@@ -46,9 +50,7 @@
         <Tag_hasType_TagClass"/>
         <TagClass_isSubclassOf_TagClass"/>
         <Forum_hasTag_Tag"/>
-        <Forum_hasMember_Person"/>
         <Message_hasTag_Tag"/>
-        <Person_likes_Message"/>
         <Person_hasInterest_Tag"/>
         -->
 

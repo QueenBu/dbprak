@@ -57,6 +57,14 @@ public class Person{
     @OneToMany(mappedBy = "pers2")
     private Set<Knows> knows2 = new HashSet<Knows>();
 
+    @OneToMany(mappedBy="personid")
+    private Set<LikesComment> likesComments= new HashSet<LikesComment>();
+
+    @OneToMany(mappedBy="personid")
+    private Set<LikesPost> likesPost= new HashSet<LikesPost>();
+
+    @OneToMany(mappedBy = "persid")
+    private Set<HasMember> hasMember = new HashSet<HasMember>();
 
     //Getters and Setters and stuff
 

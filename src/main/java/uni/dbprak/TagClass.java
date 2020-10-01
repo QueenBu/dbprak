@@ -13,9 +13,14 @@ public class TagClass {
     private BigInteger id;
     @Column(name="tagclassname")
     private String tagClassName;
-
     @OneToMany
     private Set<Tag> tags;
+    @OneToMany(mappedBy = "subclassid")
+    private Set<IsSubclassOf> issubclassof;
+    @OneToMany(mappedBy = "tagclassid")
+    private Set<IsSubclassOf> issuperclassof;
+
+    //Getter and Setter
 
     public BigInteger getId() {
         return id;

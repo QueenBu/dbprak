@@ -3,6 +3,8 @@ package uni.dbprak;
 import javax.persistence.*;
 import java.math.BigInteger;
 import java.sql.Timestamp;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @Table(name = "forum")
@@ -20,5 +22,7 @@ public class Forum {
     @ManyToOne
     private Person moderator;
 
+    @OneToMany(mappedBy = "forumid")
+    private Set<HasMember> hasMember = new HashSet<HasMember>();
 
 }
