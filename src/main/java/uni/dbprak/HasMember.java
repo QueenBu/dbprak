@@ -25,4 +25,28 @@ public class HasMember {
         this.persid = persid;
         this.joindate = joindate;
     }
+
+    public Forum getForumid() {
+        return forumid;
+    }
+
+    public void setForumid(Forum forumid) {
+        this.forumid = forumid;
+    }
+
+    public Person getPersid() {
+        return persid;
+    }
+
+    public void setPersid(Person persid) {
+        this.persid = persid;
+    }
+
+    public Date getJoindate() {
+        return joindate;
+    }
+
+    public void setJoindate(Date joindate) {
+        this.joindate = joindate;
+    }
 }

@@ -15,4 +15,32 @@ public class Country extends Place{
     @JoinColumn(name = "isPartOf")
     private Continent isPartOf;
 
+    public Country() {
+    }
+
+    /**
+     * Constructor for Country
+     * @param cities
+     * @param isPartOf
+     */
+    public Country(Set<City> cities, Continent isPartOf) {
+        this.cities = cities;
+        this.isPartOf = isPartOf;
+    }
+
+    public Set<City> getCities() {
+        return cities;
+    }
+
+    public void setCities(Set<City> cities) {
+        this.cities = cities;
+    }
+
+    public Continent getIsPartOf() {
+        return isPartOf;
+    }
+
+    public void setIsPartOf(Continent isPartOf) {
+        this.isPartOf = isPartOf;
+    }
 }

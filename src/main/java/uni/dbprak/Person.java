@@ -75,16 +75,13 @@ public class Person{
     private Set<PersonSpeaks> personSpeaks = new HashSet<PersonSpeaks>();
 
     //Getters and Setters and stuff
-
-    public Set<Comment> getComment() {
-        return comment;
+    public Person() {
     }
 
-    public void setComment(Set<Comment> comment) {
-        this.comment = comment;
+    public int getId() {
+        return id;
     }
 
-    public Person() {}
     public String getFirstName() {
         return firstName;
     }
@@ -93,11 +90,71 @@ public class Person{
         return lastName;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+    public String getGender() {
+        return gender;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public Date getBirthday() {
+        return birthday;
+    }
+
+    public Date getCreationDate() {
+        return creationDate;
+    }
+
+    public String getLocationIP() {
+        return locationIP;
+    }
+
+    public String getBrowserUsed() {
+        return browserUsed;
+    }
+
+    public City getIsLocatedIn() {
+        return isLocatedIn;
+    }
+
+    public Set<Comment> getComment() {
+        return comment;
+    }
+
+    public Set<StudyAt> getStudyAt() {
+        return studyAt;
+    }
+
+    public Set<WorksAt> getWorksAt() {
+        return worksAt;
+    }
+
+    public Set<Knows> getKnows1() {
+        return knows1;
+    }
+
+    public Set<Knows> getKnows2() {
+        return knows2;
+    }
+
+    public Set<LikesComment> getLikesComments() {
+        return likesComments;
+    }
+
+    public Set<LikesPost> getLikesPost() {
+        return likesPost;
+    }
+
+    public Set<HasMember> getHasMember() {
+        return hasMember;
+    }
+
+    public Set<HasInterest> getHasInterests() {
+        return hasInterests;
+    }
+
+    public Set<PersonEmail> getPersonEmails() {
+        return personEmails;
+    }
+
+    public Set<PersonSpeaks> getPersonSpeaks() {
+        return personSpeaks;
     }
 }

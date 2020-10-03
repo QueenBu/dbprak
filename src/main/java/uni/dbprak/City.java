@@ -20,30 +20,19 @@ public class City extends Place {
     @JoinColumn(name = "isPartOf")
     private Country isPartOf;
 
-    public Set<Person> getPersons() {
-        return persons;
+    //Getter and Setter
+    public City() {
     }
 
-    public void setPersons(Set<Person> persons) {
-        this.persons = persons;
+    public Set<Person> getPersons() {
+        return persons;
     }
 
     public Set<University> getUniversities() {
         return universities;
     }
 
-    public void setUniversities(Set<University> universities) {
-        this.universities = universities;
-    }
-
     public Country getIsPartOf() {
         return isPartOf;
-    }
-
-    public void setIsPartOf(Country isPartOf) {
-        this.isPartOf = isPartOf;
-    }
-
-    public City() {
     }
 }

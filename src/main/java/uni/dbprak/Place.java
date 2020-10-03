@@ -13,6 +13,13 @@ public class Place {
     @Column(name = "name")
     private String name;
 
+    public Place() {
+    }
+
+    public Place(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
 
     public int getId() { return id; }
 

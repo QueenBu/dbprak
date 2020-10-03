@@ -2,6 +2,7 @@ package uni.dbprak;
 
 import javax.persistence.*;
 
+
 @Entity
 @IdClass(ForumHasTagID.class)
 public class ForumHasTag {

@@ -24,4 +24,16 @@ public class PersonEmail {
     public String getEmail() {
         return email;
     }
+
+    public void setId(BigInteger id) {
+        this.id = id;
+    }
+
+    public void setPersid(Person persid) {
+        this.persid = persid;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
 }

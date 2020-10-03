@@ -17,4 +17,20 @@ public class HasMemberID implements Serializable {
 
     public HasMemberID() {
     }
+
+    public Forum getForumid() {
+        return forumid;
+    }
+
+    public void setForumid(Forum forumid) {
+        this.forumid = forumid;
+    }
+
+    public Person getPersid() {
+        return persid;
+    }
+
+    public void setPersid(Person persid) {
+        this.persid = persid;
+    }
 }

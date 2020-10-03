@@ -30,8 +30,26 @@ public class Tag {
     @OneToMany(mappedBy = "tagid")
     private Set<HasInterest> hasInterests = new HashSet<HasInterest>();
 
+    public Tag() {
+    }
 
+    public Tag(BigInteger id, String tagName, TagClass hasType, Set<ForumHasTag> forumHasTag, Set<PostHasTag> postHasTag, Set<CommentHasTag> commentHasTag, Set<HasInterest> hasInterests) {
+        this.id = id;
+        this.tagName = tagName;
+        this.hasType = hasType;
+        this.forumHasTag = forumHasTag;
+        this.postHasTag = postHasTag;
+        this.commentHasTag = commentHasTag;
+        this.hasInterests = hasInterests;
+    }
 
+    public BigInteger getId() {
+        return id;
+    }
+
+    public void setId(BigInteger id) {
+        this.id = id;
+    }
 
     public String getTagName() {
         return tagName;
@@ -43,5 +61,41 @@ public class Tag {
 
     public TagClass getHasType() {
         return hasType;
+    }
+
+    public void setHasType(TagClass hasType) {
+        this.hasType = hasType;
+    }
+
+    public Set<ForumHasTag> getForumHasTag() {
+        return forumHasTag;
+    }
+
+    public void setForumHasTag(Set<ForumHasTag> forumHasTag) {
+        this.forumHasTag = forumHasTag;
+    }
+
+    public Set<PostHasTag> getPostHasTag() {
+        return postHasTag;
+    }
+
+    public void setPostHasTag(Set<PostHasTag> postHasTag) {
+        this.postHasTag = postHasTag;
+    }
+
+    public Set<CommentHasTag> getCommentHasTag() {
+        return commentHasTag;
+    }
+
+    public void setCommentHasTag(Set<CommentHasTag> commentHasTag) {
+        this.commentHasTag = commentHasTag;
+    }
+
+    public Set<HasInterest> getHasInterests() {
+        return hasInterests;
+    }
+
+    public void setHasInterests(Set<HasInterest> hasInterests) {
+        this.hasInterests = hasInterests;
     }
 }

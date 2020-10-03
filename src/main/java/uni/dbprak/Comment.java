@@ -25,4 +25,24 @@ public class Comment extends Message{
     @OneToMany(mappedBy = "commentid")
     private Set<CommentHasTag> commentHasTag = new HashSet<CommentHasTag>();
 
+
+    //Getter
+    public Comment() {
+    }
+
+    public Comment getReplyOfComment() {
+        return replyOfComment;
+    }
+
+    public Post getReplyOfPost() {
+        return replyOfPost;
+    }
+
+    public Set<LikesComment> getLikesComments() {
+        return likesComments;
+    }
+
+    public Set<CommentHasTag> getCommentHasTag() {
+        return commentHasTag;
+    }
 }

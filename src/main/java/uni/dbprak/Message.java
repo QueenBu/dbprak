@@ -28,6 +28,38 @@ public class Message {
     @JoinColumn( name = "isLocatedIn")
     private Country isLocatedIn;
 
+    public Message() {
+    }
 
+    public BigInteger getId() {
+        return id;
+    }
 
+    public Timestamp getCreationDate() {
+        return creationDate;
+    }
+
+    public String getLocationIP() {
+        return locationIP;
+    }
+
+    public String getBrowserUsed() {
+        return browserUsed;
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public BigInteger getLength() {
+        return length;
+    }
+
+    public Person getCreator() {
+        return creator;
+    }
+
+    public Country getIsLocatedIn() {
+        return isLocatedIn;
+    }
 }

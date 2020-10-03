@@ -13,6 +13,11 @@ public class Continent extends Place{
     //@OneToMany(mappedBy="isPartOf")
     private Set<Country> countries;
 
+    public Continent() {
+    }
+    public Continent(Set<Country> countries) {
+        this.countries = countries;
+    }
     public Set<Country> getCountries() {
         return countries;
     }
